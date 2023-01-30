@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    active: dev
+
+app.over.minutes: 25
+user.pic: D:/Dev/practices-2022/MyPractices/pictures/
+

@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://114.132.62.46:3306/mypractices?useSSL=false
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+logging:
+  level:
+    root: warn
+    cn.edu.lzzy.mypractices: error
+  file:
+    name: blog-prd.log
+server:
+  port: 80
