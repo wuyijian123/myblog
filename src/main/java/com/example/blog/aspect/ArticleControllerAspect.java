@@ -19,11 +19,11 @@ public class ArticleControllerAspect {
 
     @Pointcut("execution(* com.example.blog.web.article.ArticleApiController.addArticle(..)) ||"
             + "execution(* com.example.blog.web.article.ArticleApiController.updateArticle(..)) ||"
-            +"execution(* com.example.blog.web.article.ArticleApiController.delete(..)) "
+            +"execution(* com.example.blog.web.article.ArticleApiController.deleteArticle(..)) "
     )
     private void articleAspect() {
     }
-    @Pointcut("execution(* com.example.blog.web.article.ArticleApiController.adminDelete(..))")
+    @Pointcut("execution(* com.example.blog.web.article.ArticleApiController.adminDeleteArticle(..))")
     private  void  adminArticleAspect(){
     }
 
